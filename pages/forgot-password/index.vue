@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 definePageMeta({
   layout: 'auth',
@@ -14,10 +14,10 @@ definePageMeta({
     <Card class="mx-auto max-w-sm">
       <CardHeader>
         <CardTitle class="text-2xl">
-          Login
+          Forgot Password
         </CardTitle>
         <CardDescription>
-          Enter your email below to login to your account
+          Enter your email address and we'll send you a link to reset your password.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -26,23 +26,13 @@ definePageMeta({
             <Label for="email">Email</Label>
             <Input id="email" type="email" placeholder="email@example.com" required />
           </div>
-          <div class="grid gap-2">
-            <div class="flex items-center">
-              <Label for="password">Password</Label>
-              <NuxtLink href="/forgot-password" class="ml-auto inline-block text-sm underline">
-                Forgot your password?
-              </NuxtLink>
-            </div>
-            <Input id="password" type="password" required />
-          </div>
           <Button type="submit" class="w-full">
-            Login
+            Reset
           </Button>
         </div>
         <div class="mt-4 text-center text-sm">
-          Don't have an account?
-          <NuxtLink to="/register" class="underline">
-            Sign up
+          <NuxtLink to="/login" class="underline">
+            Back to login
           </NuxtLink>
         </div>
       </CardContent>
