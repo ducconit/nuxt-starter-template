@@ -24,14 +24,25 @@ definePageMeta({
         <div class="grid gap-4">
           <div class="grid gap-2">
             <Label for="email">Email</Label>
-            <Input id="email" type="email" placeholder="email@example.com" required />
+            <Input
+              id="email"
+              type="email"
+              placeholder="email@example.com"
+              required
+            />
           </div>
-          <Button type="submit" class="w-full">
+          <Button
+            type="submit"
+            class="w-full"
+          >
             Reset
           </Button>
         </div>
         <div class="mt-4 text-center text-sm">
-          <NuxtLink to="/login" class="underline">
+          <NuxtLink
+            to="/login"
+            class="underline"
+          >
             Back to login
           </NuxtLink>
         </div>

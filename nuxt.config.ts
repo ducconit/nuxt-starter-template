@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
     '@nuxt/eslint',
+    '@vueuse/nuxt',
   ],
   devtools: { enabled: ENABLE_DEVTOOLS },
 
