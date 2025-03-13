@@ -25,10 +25,10 @@ defineProps({
   },
   trend: {
     type: String,
-    required: true
+    required: false
   },
   icon: {
-    type: Object,
+    type: Function,
     required: true
   }
 })
